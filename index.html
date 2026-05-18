@@ -340,6 +340,76 @@
 
     .servico-card p { font-size: 0.85rem; color: var(--text-muted); }
 
+    /* ─── DEPOIMENTOS ─── */
+    .depoimentos-section {
+      padding: 5rem 1.5rem;
+      background: var(--dark);
+    }
+
+    .depoimentos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .depoimento-card {
+      background: var(--dark2);
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: 8px;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .depoimento-card:hover { border-color: rgba(201,168,76,0.4); }
+
+    .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; }
+
+    .depoimento-texto {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.75;
+      flex: 1;
+      font-style: italic;
+    }
+
+    .depoimento-autor {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .autor-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #7a5a20);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      color: #0a0a0a;
+      flex-shrink: 0;
+    }
+
+    .autor-nome {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .autor-local {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
     /* ─── CTA FINAL ─── */
     .cta-section {
       background: var(--dark2);
@@ -649,6 +719,102 @@
       <h3>Lettering</h3>
       <p>Palavras e frases com caligrafia artística personalizada.</p>
     </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DEPOIMENTOS ═══════════════ -->
+<div class="section-header">
+  <span class="label">O que dizem nossos clientes</span>
+  <h2>Avaliações</h2>
+</div>
+
+<section class="depoimentos-section">
+  <div class="depoimentos-grid">
+
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="depoimento-texto">
+        "Fiz minha primeira tatuagem aqui e me arrependi de ter esperado tanto! O atendimento foi incrível, super atencioso do começo ao fim. O traço ficou perfeito, exatamente como eu queria. Já estou planejando a próxima!"
+      </p>
+      <div class="depoimento-autor">
+        <div class="autor-avatar">JF</div>
+        <div>
+          <div class="autor-nome">Julia Fernandes</div>
+          <div class="autor-local">Itaporanga, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="depoimento-texto">
+        "Profissional demais! Expliquei a ideia e ele foi além do que eu esperava. Ambiente limpo, agulha lacrada na minha frente, me deixou bem tranquilo. A tatuagem cicatrizou linda. Recomendo de olhos fechados!"
+      </p>
+      <div class="depoimento-autor">
+        <div class="autor-avatar">RS</div>
+        <div>
+          <div class="autor-nome">Rafael Souza</div>
+          <div class="autor-local">Itaporanga, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="depoimento-texto">
+        "Já fiz três tatuagens aqui e cada uma ficou melhor que a anterior. O cuidado com o cliente é diferenciado — tirou todas as minhas dúvidas sobre cuidados e cicatrização. Não vou em outro lugar!"
+      </p>
+      <div class="depoimento-autor">
+        <div class="autor-avatar">CM</div>
+        <div>
+          <div class="autor-nome">Camila Martins</div>
+          <div class="autor-local">Itaporanga, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="depoimento-texto">
+        "Fui indicada por uma amiga e não me arrependo. Atendimento rápido pelo WhatsApp, preço justo e o resultado ficou incrível. As cores vibrantes que ele consegue são impressionantes. Super indico!"
+      </p>
+      <div class="depoimento-autor">
+        <div class="autor-avatar">AP</div>
+        <div>
+          <div class="autor-nome">Amanda Pereira</div>
+          <div class="autor-local">Itaporanga, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="depoimento-texto">
+        "Nunca tinha tatuado e estava com muito medo da dor. Ele foi super paciente, me deixou confortável durante todo o processo. O resultado ficou muito além do que eu imaginava. Já indiquei pra toda a família!"
+      </p>
+      <div class="depoimento-autor">
+        <div class="autor-avatar">TL</div>
+        <div>
+          <div class="autor-nome">Thiago Lima</div>
+          <div class="autor-local">Itaporanga, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p class="depoimento-texto">
+        "Vim de outra cidade especialmente para tatuar aqui depois de ver os trabalhos no Instagram. Valeu cada quilômetro! Traço fino e preciso, atendimento nota 10. Com certeza voltarei para o próximo projeto."
+      </p>
+      <div class="depoimento-autor">
+        <div class="autor-avatar">MB</div>
+        <div>
+          <div class="autor-nome">Mariana Barbosa</div>
+          <div class="autor-local">Piraju, SP</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
